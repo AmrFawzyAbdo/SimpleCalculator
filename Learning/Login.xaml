@@ -3,6 +3,13 @@
     <ContentPage.Content>
 
         <Grid ColumnSpacing="2" RowSpacing="2">
+
+            <Grid.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0,30,0,0" />
+                </OnPlatform>
+            </Grid.Margin>
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
